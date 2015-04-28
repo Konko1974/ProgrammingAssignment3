@@ -40,14 +40,5 @@ best<-function(state,outcome)
   hospitalsName <- hospitals[, 1]
   orderedHospitals<-hospitals[order(values,hospitalsName),]
   
-  ris<-vector(mode="character",length=30)
-  
-  i<-1
-  while(i<=30)
-  {
-    ris[i]<-orderedHospitals[i,1]
-    i<-i+1
-  }
-  
-  return(ris)
+  return(orderedHospitals[1,1])
 }
