@@ -1,9 +1,14 @@
 setwd("C:/Users/AICEnricoF/git/ProgrammingAssignment3")
 
 source("best.R")
-best("TX", "heart attack")[1]
-best("TX", "heart failure")[1]
-best("MD", "heart attack")[1]
-best("MD", "pneumonia")[1]
+best("TX", "heart attack")
+best("TX", "heart failure")
+best("MD", "heart attack")
+best("MD", "pneumonia")
 best("BB", "heart attack")
 best("NY", "hert attack")
+
+source("rankhospital.R")
+rankhospital("TX", "heart failure", 4)
+rankhospital("MD", "heart attack", "worst")
+rankhospital("MN", "heart attack", 5000)
