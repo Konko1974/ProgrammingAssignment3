@@ -23,5 +23,6 @@ rankall<-function(outcome,num="best")
     indice<-indice+1
   }
   
-  return(x)
+  rit<-data.frame(x)
+  return(rit)
 }
